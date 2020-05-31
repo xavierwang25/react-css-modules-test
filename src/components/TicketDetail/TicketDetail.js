@@ -1,14 +1,37 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
+import Card from '../Card'
 import styles from './TicketDetail.module.css'
 
 const TicketDetail = ({ ticket }) => <div className={styles.container}>
-  asdf
+  {ticket == null ? <div className={styles.empty}>
+    <div className={styles.times}>
+      <i className="fas fa-times"></i>
+    </div>
+    <div className={styles.value}>No ticket Selected</div>
+  </div> : <Fragment>
+    <Card title="Owner">
+      <div className={styles.ownerBody}>
+        <img src={ticket.avatar} alt={ticket.name}></img>
+        <div >
+          <div className={styles.value}>{ticket.name}</div>
+          <div className={styles.value}>{ticket.name}</div>
+        </div>
+      </div>
+    </Card>
+    <Card title="Details">
+      asdfasdf
+  </Card>
+    <Card title="Asset">
+      asdfasdf
+  </Card>
+  </Fragment>}
 </div>
 
 TicketDetail.propTypes = {
   ticket: PropTypes.shape({
     number: PropTypes.number.isRequired,
+    avatar: PropTypes.string.isRequired,
     lastUpdatedTime: PropTypes.number.isRequired,
     specialities: PropTypes.arrayOf(PropTypes.string).isRequired,
     name: PropTypes.string.isRequired,
