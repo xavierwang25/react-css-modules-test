@@ -1,8 +1,9 @@
 @value colors: '../../colors.css';
-@value blue, red, green from colors;
+@value gray200, gray700, purple from colors;
 
-.header {
-    background-color: blue;
-    color: green;
-    padding: 10px 5px;
+.title {
+    color: gray200;
+    padding: 0 0.25rem 0.75rem;
+    border-bottom: 4px solid purple;
+    font-size: 1.25rem;
 }
