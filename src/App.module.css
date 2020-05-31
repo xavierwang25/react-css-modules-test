@@ -30,9 +30,18 @@
     background-color: transparent;
     margin-bottom: 0.75rem;
     color: gray200;
-    font-size: 0.75rem;
+    display: flex;
 }
 
-.search:focus {
+.searchInput {
+    background-color: transparent;
+    font-size: 0.75rem;
+    color: gray200;
+    border: none;
+    margin-left: 0.5rem;
+    flex: 1;
+}
+
+.searchInput:focus {
     outline: none;
 }
