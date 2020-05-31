@@ -1,5 +1,5 @@
 @value colors: './colors.css';
-@value gray700 from colors;
+@value gray200, gray500, gray700 from colors;
 
 .container {
     display: flex;
@@ -15,4 +15,24 @@
     flex: 1;
     display: flex;
     overflow: hidden;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 28rem;
+}
+
+.search {
+    border-radius: 2px;
+    padding: 0.5rem;
+    border: 1px solid gray500;
+    background-color: transparent;
+    margin-bottom: 0.75rem;
+    color: gray200;
+    font-size: 0.75rem;
+}
+
+.search:focus {
+    outline: none;
 }
