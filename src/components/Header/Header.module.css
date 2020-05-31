@@ -1,7 +1,7 @@
 @value colors: '../../colors.css';
 @value gray200, gray700, purple from colors;
 
-.title {
+.header {
     color: gray200;
     padding: 0 0.25rem 0.5rem;
     border-bottom: 4px solid purple;
