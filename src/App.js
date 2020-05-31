@@ -1,9 +1,12 @@
 import React from 'react';
-const styles = require('./App.module.css')
+import styles from './App.module.css';
+import Header from './components/Header/Header';
 
 const App = () => {
   return (
-    <div className={styles.container}>asdfasdf</div>
+    <div className={styles.container}>
+      <Header></Header>
+    </div>
   );
 }
 

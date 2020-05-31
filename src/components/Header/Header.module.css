@@ -1,0 +1,8 @@
+@value colors: '../../colors.css';
+@value blue, red, green from colors;
+
+.header {
+    background-color: blue;
+    color: green;
+    padding: 10px 5px;
+}
