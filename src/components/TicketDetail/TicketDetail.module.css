@@ -1,0 +1,18 @@
+@value colors: '../../colors.css';
+@value gray200, gray400, gray600 from colors;
+
+.container {
+  background-color: gray600;
+  height: 100%;
+  padding: 1rem;
+}
+
+.label {
+  color: gray200;
+  font-size: 0.75rem;
+}
+
+.value {
+  color: gray400;
+  font-size: 1rem;
+}

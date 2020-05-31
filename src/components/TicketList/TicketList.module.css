@@ -1,7 +1,7 @@
 @value colors: '../../colors.css';
 @value gray200, gray300, gray400, gray500, gray600, gray800, green, yellow from colors;
 
-.tableWrapper {
+.container {
     background-color: gray600;
     flex: 1;
     overflow-y: scroll;
@@ -32,4 +32,9 @@
     font-size: 1rem;
     padding: 0.5rem 0.5rem;
     border-top: 1px solid gray800;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: gray500;
 }
