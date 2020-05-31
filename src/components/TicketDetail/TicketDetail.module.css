@@ -1,5 +1,5 @@
 @value colors: '../../colors.css';
-@value gray200, gray400, gray600 from colors;
+@value gray200, gray300, gray400, gray600 from colors;
 
 .container {
   background-color: gray600;
@@ -22,11 +22,35 @@
 }
 
 .label {
-  color: gray200;
+  color: gray400;
   font-size: 0.75rem;
 }
 
 .value {
-  color: gray400;
-  font-size: 1rem;
+  color: gray300;
+  font-size: 0.875rem;
+}
+
+.ownerBody {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 0.75rem;
+  align-items: center;
+}
+
+.ownerInfo {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-gap: 0.25rem;
+}
+
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.speciality {
+  composes: value;
+  text-transform: uppercase;
 }
