@@ -1,0 +1,17 @@
+@value colors: '../../colors.css';
+@value gray100, gray700 from colors;
+
+.container {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.header {
+  padding: 0.75rem 0.75rem 0.5rem;
+  background-color: gray700;
+  color: gray100;
+}
+
+.body {
+  padding: 1rem;
+}
