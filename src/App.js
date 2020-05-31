@@ -34,7 +34,7 @@ const App = () => {
     }
     const ticket = _.find(tickets, {ticketId: selectedTicketId});
     return {
-      ..._.pick(ticket, ['number', 'lastUpdatedTime']),
+      ..._.pick(ticket, ['number', 'lastUpdatedTime', 'reportedTime', 'status', 'description']),
       ..._.pick(ticket.owner, ['avatar', 'specialities']),
       name: `${ticket.owner.firstName} ${ticket.owner.lastName}`,
       assetName: ticket.asset.name,
