@@ -27,9 +27,7 @@ const TicketDetail = ({ ticket }) => <div className={styles.container}>
           <div className={styles.labelValue}>
             <div className={styles.label}>Reported</div>
             <div className={styles.value}>
-              <Moment format="MM/DD/YY HH:mm">
-                {ticket.reported}
-              </Moment>
+              <Moment format="MM/DD/YY HH:mm">{ticket.reported}</Moment>
             </div>
           </div>
           <div className={styles.labelValue}>
@@ -40,15 +38,29 @@ const TicketDetail = ({ ticket }) => <div className={styles.container}>
           </div>
           <div className={styles.labelValue}>
             <div className={styles.label}>Description</div>
-            <div className={styles.value}>
-              {ticket.description}
-            </div>
+            <div className={styles.value}>{ticket.description}</div>
           </div>
         </div>
       </Card>
       <Card title="Asset">
-        asdfasdf
-  </Card>
+        <div className={styles.detailBody}>
+          <div className={styles.labelValue}>
+            <div className={styles.label}>Name</div>
+            <div className={styles.value}>{ticket.assetName}</div>
+          </div>
+          <div className={styles.labelValue}>
+            <div className={styles.label}>GeoCode</div>
+            <div className={styles.value}>{ticket.geoCode}</div>
+          </div>
+          <div className={styles.labelValue}>
+            <div className={styles.label}>GeoCode</div>
+            <div className={styles.location}>
+              <Status label="2.900"></Status>
+              <Status label="19.100"></Status>
+            </div>
+          </div>
+        </div>
+      </Card>
     </Fragment>}
 </div>
 
