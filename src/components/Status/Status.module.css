@@ -1,0 +1,23 @@
+@value colors: '../../colors.css';
+@value gray200, gray400, gray800, yellow, green from colors;
+
+.status {
+  border-radius: 2px;
+  border: 1px solid gray800;
+  color: gray200;
+  text-align: center;
+  padding: 0.25rem 0.75rem;
+  font-size: 1rem;
+}
+
+.assigned {
+  color: yellow;
+}
+
+.completed {
+  color: green;
+}
+
+.unassigned {
+  color: gray400;
+}

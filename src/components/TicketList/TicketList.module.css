@@ -1,0 +1,39 @@
+@value colors: '../../colors.css';
+@value gray300, gray400, gray600, gray800, green, yellow from colors;
+
+.ticketList {
+    display: flex;
+    flex-direction: column;
+}
+
+.tableWrapper {
+    background-color: gray600;
+    flex: 1;
+    overflow-y: scroll;
+    padding: 0 0.75rem;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+.avatar {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.th {
+    text-align: left;
+    color: gray400;
+    font-size: 0.75rem;
+    font-weight: normal;
+    padding: 0.75rem 0.5rem;
+}
+
+.td {
+    color: gray300;
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    border-top: 1px solid gray800;
+}
