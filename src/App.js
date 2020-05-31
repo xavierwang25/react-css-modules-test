@@ -36,6 +36,7 @@ const App = () => {
     return {
       ..._.pick(['number', 'lastUpdatedTime', 'specialities']),
       name: `${ticket.owner.firstName} ${ticket.owner.lastName}`,
+      avatar: ticket.owner.avatar,
       assetName: ticket.asset.name,
       geoCode: ticket.asset.geoCode
     }
