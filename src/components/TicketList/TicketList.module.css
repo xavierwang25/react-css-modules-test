@@ -1,11 +1,28 @@
 @value colors: '../../colors.css';
-@value gray200, gray300, gray400, gray500, gray600, gray800, green, yellow from colors;
+@value gray200, gray300, gray400, gray500, gray600, gray700, gray800, green, yellow from colors;
 
 .container {
     background-color: gray600;
     flex: 1;
     overflow-y: scroll;
     padding: 0 0.75rem;
+}
+
+
+.container::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+.container::-webkit-scrollbar-track {
+    background: gray800;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: gray500;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background: gray500;
 }
 
 .table {
