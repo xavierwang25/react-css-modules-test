@@ -30,7 +30,10 @@ const App = () => {
       <Header></Header>
       <div className={styles.main}>
         <div className={styles.sidebar}>
-          <input className={styles.search} value={filter} onChange={e => setFilter(e.target.value)}></input>
+          <div className={styles.search}>
+            <i class="fas fa-search"></i>
+            <input className={styles.searchInput} value={filter} onChange={e => setFilter(e.target.value)}></input>
+          </div>
           <TicketList tickets={ticketList}></TicketList>
         </div>
       </div>
