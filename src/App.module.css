@@ -11,7 +11,7 @@
 }
 
 .main {
-    margin-top: 0.5rem;
+    margin-top: 0.75rem;
     flex: 1;
     display: flex;
     overflow: hidden;
@@ -44,4 +44,9 @@
 
 .searchInput:focus {
     outline: none;
+}
+
+.content {
+    margin-left: 0.5rem;
+    flex: 1;
 }
