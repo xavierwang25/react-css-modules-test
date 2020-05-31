@@ -34,13 +34,13 @@ const App = () => {
     }
     const ticket = _.find(tickets, {ticketId: selectedTicketId});
     return {
-      ..._.pick(['number', 'lastUpdatedTime', 'specialities']),
+      ..._.pick(ticket, ['number', 'lastUpdatedTime']),
+      ..._.pick(ticket.owner, ['avatar', 'specialities']),
       name: `${ticket.owner.firstName} ${ticket.owner.lastName}`,
-      avatar: ticket.owner.avatar,
       assetName: ticket.asset.name,
       geoCode: ticket.asset.geoCode
     }
-  }, [tickets, setSelectedTicketId]);
+  }, [tickets, selectedTicketId]);
 
   return (
     <div className={styles.container}>
