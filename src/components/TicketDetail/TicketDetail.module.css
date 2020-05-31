@@ -23,7 +23,7 @@
 
 .label {
   color: gray400;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 
 .value {
@@ -38,7 +38,7 @@
   align-items: center;
 }
 
-.ownerInfo {
+.labelValue {
   display: grid;
   grid-template-rows: auto auto;
   grid-gap: 0.25rem;
@@ -53,4 +53,10 @@
 .speciality {
   composes: value;
   text-transform: uppercase;
+}
+
+.detailBody {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-gap: 2.5rem;
 }

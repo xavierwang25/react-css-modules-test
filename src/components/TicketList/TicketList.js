@@ -4,6 +4,7 @@ import Moment from 'react-moment'
 import cx from 'classnames'
 import Status from '../Status'
 import styles from './TicketList.module.css'
+import getLabelFromStatus from '../../utils/getLabelFromStatus';
 
 const TicketList = ({ tickets, selectedId, onTicketClick }) => {
   return <div className={styles.container}>
@@ -23,7 +24,7 @@ const TicketList = ({ tickets, selectedId, onTicketClick }) => {
             <td className={styles.td}><Moment format="MM/DD/YY HH:mm">{ticket.reportedTime}</Moment></td>
             <td className={styles.td}>{ticket.asset}</td>
             <td className={styles.td}>
-              <Status label={{ 'assigned': 'ASD', 'completed': 'COM', 'unassigned': 'UNA' }[ticket.status]} status={ticket.status}></Status>
+              <Status label={getLabelFromStatus(ticket.status)} status={ticket.status}></Status>
             </td>
           </tr>
         ))}
