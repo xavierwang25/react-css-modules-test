@@ -60,3 +60,9 @@
   grid-template-rows: auto auto auto;
   grid-gap: 2.5rem;
 }
+
+.location {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-gap: 0.25rem;
+}
