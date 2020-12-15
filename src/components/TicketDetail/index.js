@@ -1,3 +1,3 @@
-import TicketDetail from './TicketDetail'
+import TicketDetail from "./TicketDetail";
 
 export default TicketDetail;

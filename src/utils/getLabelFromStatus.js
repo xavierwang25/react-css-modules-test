@@ -1,1 +1,2 @@
-export default status => ({ 'assigned': 'ASD', 'completed': 'COM', 'unassigned': 'UNA' }[status])
+export default (status) =>
+  ({ assigned: "ASD", completed: "COM", unassigned: "UNA" }[status]);
